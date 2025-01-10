@@ -1,7 +1,6 @@
 # Ejercicio con CSS Grid
 
-Este repositorio contiene un ejercicio práctico en el que se utiliza CSS Grid para crear un diseño de página.
-El objetivo es aprender y practicar el uso de esta herramienta de CSS para crear layouts responsivos y ordenados.
+Este repositorio contiene un ejercicio práctico en el que se utiliza CSS Grid, el objetivo es aprender y practicar el uso de esta herramienta de CSS para crear layouts responsivos y ordenados.
 
 
 
