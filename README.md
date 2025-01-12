@@ -4,4 +4,5 @@ Este repositorio contiene un ejercicio práctico en el que se utiliza CSS Grid, 
 
 
 
-<img width="689" alt="CSS GRID" src="https://github.com/user-attachments/assets/ee690809-db15-4e17-b8b2-0cee65170f36" />
+<img width="607" alt="CSS GRID" src="https://github.com/user-attachments/assets/e7a94b37-d7f7-4233-85ca-944ad384aad2" />
+
