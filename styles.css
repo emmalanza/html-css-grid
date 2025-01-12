@@ -12,28 +12,53 @@ h1 {
     grid-gap: 10px; 
     max-width: 600px;
     margin: auto;
+    perspective: 1000px; 
 }
 
-.grid-item {
-    width: 120px;
-    height: 82px;
-    text-align: center;
-    font-size: 60px;
-    padding: 10px;
-    border-radius: 5px;
+
+.card {
+    width: 150px; 
+    height: 150px; 
+    position: relative;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s; 
 }
 
-.grid-item:nth-child(1) { background-color: #f68686; } 
-.grid-item:nth-child(2) { background-color: #f468dab0; } 
-.grid-item:nth-child(3) { background-color: #efef7e; } 
-.grid-item:nth-child(4) { background-color: #78e978; } 
-.grid-item:nth-child(5) { background-color: #b257b0; } 
-.grid-item:nth-child(6) { background-color: #a56edc; } 
-.grid-item:nth-child(7) { background-color: #ed79b3; } 
-.grid-item:nth-child(8) { background-color: #e193bb; } 
-.grid-item:nth-child(9) { background-color: #e0a3e0; } 
-.grid-item:nth-child(10) { background-color: #e0d56e; } 
-.grid-item:nth-child(11) { background-color: #985f98; } 
-.grid-item:nth-child(12) { background-color: #59d1c9; } 
-.grid-item:nth-child(13) { background-color: #80b6c8; } 
-.grid-item:nth-child(14) { background-color: #90ee90; } 
+.card.flip {
+    transform: rotateY(180deg); 
+}
+
+.card p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 0;
+    background: #f0f0f0; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card .back {
+    transform: rotateY(180deg); 
+    background: #b2b2b2;
+}
+
+.card:nth-child(1) .front { background-color: #f68686; } 
+.card:nth-child(2) .front { background-color: #f468dab0; } 
+.card:nth-child(3) .front { background-color: #efef7e; } 
+.card:nth-child(4) .front { background-color: #78e978; } 
+.card:nth-child(5) .front { background-color: #b257b0; } 
+.card:nth-child(6) .front { background-color: #a56edc; } 
+.card:nth-child(7) .front { background-color: #ed79b3; } 
+.card:nth-child(8) .front { background-color: #e193bb; } 
+.card:nth-child(9) .front { background-color: #e0a3e0; } 
+.card:nth-child(10) .front { background-color: #e0d56e; } 
+.card:nth-child(11) .front { background-color: #985f98; } 
+.card:nth-child(12) .front { background-color: #59d1c9; } 
+.card:nth-child(13) .front { background-color: #80b6c8; } 
+.card:nth-child(14) .front { background-color: #90ee90; } 
